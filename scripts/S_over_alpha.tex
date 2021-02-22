@@ -1,0 +1,69 @@
+% This file was created by tikzplotlib v0.9.0.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=white!80!black},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={\(\displaystyle \alpha\)},
+xmin=-0.05, xmax=1.05,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={\(\displaystyle \mathcal{S}\,[\%]\)},
+ymin=-2.65, ymax=55.65,
+ytick style={color=black}
+]
+\addplot [semithick, color0]
+table {%
+0 0
+0.1 31
+0.2 39
+0.3 41
+0.4 36
+0.5 53
+0.6 52
+0.7 37
+0.8 23
+0.9 9
+1 0
+};
+\addlegendentry{LogReg all}
+\addplot [semithick, color1]
+table {%
+0 0
+0.1 20
+0.2 43
+0.3 44
+0.4 37
+0.5 41
+0.6 40
+0.7 35
+0.8 24
+0.9 10
+1 0
+};
+\addlegendentry{LogReg FTU}
+\addplot [semithick, color2]
+table {%
+0 0
+0.1 0
+0.2 0
+0.3 0
+0.4 0
+0.5 0
+0.6 0
+0.7 0
+0.8 0
+0.9 0
+1 0
+};
+\addlegendentry{Our Method}
+\end{axis}
+
+\end{tikzpicture}
